@@ -48,6 +48,10 @@ select {
   color: white;
 }
 
+.submit-button {
+  background-color: white;
+}
+
 .books-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
