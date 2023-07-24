@@ -14,9 +14,16 @@ function addBookToLibrary(title, author, pages, read) {
     myLibrary.push(newBook);
 }
 
+function removeBook(id) {
+    myLibrary.splice(id, 1);
+}
+
 function displayLibrary(library) {
 
     const container = document.querySelector('.books-section');
+
+    // Clear all child elements in DOM
+    container.innerHTML = '';
 
     for (let i = 0; i < library.length; i++) {
         let book = library[i];
