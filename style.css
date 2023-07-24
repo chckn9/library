@@ -89,6 +89,12 @@ select {
   border-radius: 10px;
 }
 
+.rm-button:hover {
+  color: #dd3a3a;
+  height: 21px;
+  width: 21px;
+}
+
 .rm-button-row {
   display: flex;
   justify-content: space-between;
