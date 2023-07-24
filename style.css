@@ -4,6 +4,10 @@ html, body {
 
 * {
   font-family: 'Ubuntu', sans-serif;
+  --red-color: #F16D6E;
+  --gray-color: #E0E0DF;
+  --green-color: #60C3AB;
+  --dark-gray-color: #637888;
 }
 
 h3 {
@@ -21,13 +25,21 @@ input, select {
   border-radius: 50px;
 }
 
+.header img {
+  height: 40px;
+  padding-right: 15px;
+}
+
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px 40px;
-  background-color: lightgray;
 }
 
 .form-section {
-  background-color: lightyellow;
+  background-color: var(--green-color);
+  color: white;
 }
 
 .books-section {
@@ -40,7 +52,8 @@ input, select {
 }
 
 .book {
-  background-color: lightgray;
+  background-color: var(--red-color);
+  color: white;
   padding: 20px;
   border-radius: 5px;
 }
