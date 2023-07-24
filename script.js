@@ -36,14 +36,23 @@ function displayLibrary(library) {
         let newBookPages = document.createElement('h3');
         newBookPages.innerHTML = book.pages;
         newBookPages.classList.add("pages");
+
+        let removeButtonRow = document.createElement('div');
+        removeButtonRow.classList.add("rm-button-row");
+        
         let newBookRead = document.createElement('h3');
         newBookRead.innerHTML = book.read;
         newBookRead.classList.add("read");
+        let removeButton = document.createElement('div');
+        removeButton.innerHTML = 'X';
+        removeButton.classList.add("rm-button");
 
         newBookCard.appendChild(newBookTitle);
         newBookCard.appendChild(newBookAuthor);
         newBookCard.appendChild(newBookPages);
-        newBookCard.appendChild(newBookRead);
+        newBookCard.appendChild(removeButtonRow);
+        removeButtonRow.appendChild(newBookRead);
+        removeButtonRow.appendChild(removeButton);
     }
 }
 
