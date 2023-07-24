@@ -57,8 +57,8 @@ function displayLibrary(library) {
 }
 
 // Add placeholder books
-addBookToLibrary('7 Habits', 'Stephen Covey', '432', 'Yes');
-addBookToLibrary('Steve Jobs Biography', 'Isaac Walterson', '656', 'Yes');
-addBookToLibrary('Good Strategy Bad Strategy', 'Richard Rumelt', '336', 'No');
+addBookToLibrary('7 Habits', 'Stephen Covey', '432', 'Read');
+addBookToLibrary('Steve Jobs Biography', 'Isaac Walterson', '656', 'Read');
+addBookToLibrary('Good Strategy Bad Strategy', 'Richard Rumelt', '336', 'Not Read');
 
 displayLibrary(myLibrary);
