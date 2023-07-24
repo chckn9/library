@@ -2,9 +2,32 @@ html, body {
   margin: 0;
 }
 
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+input, select {
+  border: transparent;
+  border-radius: 50px;
+}
+
 .header {
-  padding: 20px;
+  padding: 20px 40px;
   background-color: lightgray;
+}
+
+.form-section {
+  background-color: lightyellow;
 }
 
 .books-section {
@@ -13,10 +36,11 @@ html, body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding-top: 20px;
+  padding: 20px 20px 20px;
 }
 
 .book {
   background-color: lightgray;
   padding: 20px;
+  border-radius: 5px;
 }
