@@ -70,11 +70,22 @@ function displayLibrary(library) {
     }
 }
 
+// Add book when form values submitted
+const form = document.querySelector('form')
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  const formData = new FormData(form)
+  let inputArr = [];
+  for (const pair of formData.entries()) {
+    inputArr.push(pair.pop());
+  }
+  addBookToLibrary(inputArr[0], inputArr[1], inputArr[2], inputArr[3],)
+  displayLibrary(myLibrary);
+})
+
 // Add placeholder books
 addBookToLibrary('7 Habits', 'Stephen Covey', '432', 'Read');
 addBookToLibrary('Steve Jobs Biography', 'Isaac Walterson', '656', 'Read');
 addBookToLibrary('Good Strategy Bad Strategy', 'Richard Rumelt', '336', 'Not Read');
 
 displayLibrary(myLibrary);
-
-// Make this into a function and add function to displayLibrary()
