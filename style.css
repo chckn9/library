@@ -1,12 +1,22 @@
+html, body {
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  background-color: lightgray;
+}
+
 .books-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  padding-top: 20px;
 }
 
 .book {
   background-color: lightgray;
-  margin: 20px;
   padding: 20px;
 }
