@@ -54,6 +54,7 @@ function displayLibrary(library) {
         let removeButton = document.createElement('div');
         removeButton.innerHTML = 'X';
         removeButton.classList.add('rm-button');
+        // removeButton.setAttribute('id', i);
 
         newBookCard.appendChild(newBookTitle);
         newBookCard.appendChild(newBookAuthor);
@@ -61,6 +62,12 @@ function displayLibrary(library) {
         newBookCard.appendChild(removeButtonRow);
         removeButtonRow.appendChild(newBookRead);
         removeButtonRow.appendChild(removeButton);
+
+        // Add event listener to remove button
+        removeButton.addEventListener('click', function() {
+            removeBook(document.getElementById(i));
+            displayLibrary(myLibrary);
+        })
     }
 }
 
@@ -70,3 +77,5 @@ addBookToLibrary('Steve Jobs Biography', 'Isaac Walterson', '656', 'Read');
 addBookToLibrary('Good Strategy Bad Strategy', 'Richard Rumelt', '336', 'Not Read');
 
 displayLibrary(myLibrary);
+
+// Make this into a function and add function to displayLibrary()
