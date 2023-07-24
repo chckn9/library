@@ -23,29 +23,30 @@ function displayLibrary(library) {
 
         // Add empty book card to books-section
         let newBookCard = document.createElement('div');
-        newBookCard.classList.add("book");
+        newBookCard.classList.add('book');
+        newBookCard.setAttribute('id', i);
         container.appendChild(newBookCard);
 
         // Add content of current book to card
         let newBookTitle = document.createElement('h2');
         newBookTitle.innerHTML = book.title;
-        newBookTitle.classList.add("title");
+        newBookTitle.classList.add('title');
         let newBookAuthor = document.createElement('h3');
         newBookAuthor.innerHTML = book.author;
-        newBookAuthor.classList.add("author");
+        newBookAuthor.classList.add('author');
         let newBookPages = document.createElement('h3');
         newBookPages.innerHTML = book.pages;
-        newBookPages.classList.add("pages");
+        newBookPages.classList.add('pages');
 
         let removeButtonRow = document.createElement('div');
-        removeButtonRow.classList.add("rm-button-row");
+        removeButtonRow.classList.add('rm-button-row');
         
         let newBookRead = document.createElement('h3');
         newBookRead.innerHTML = book.read;
-        newBookRead.classList.add("read");
+        newBookRead.classList.add('read');
         let removeButton = document.createElement('div');
         removeButton.innerHTML = 'X';
-        removeButton.classList.add("rm-button");
+        removeButton.classList.add('rm-button');
 
         newBookCard.appendChild(newBookTitle);
         newBookCard.appendChild(newBookAuthor);
