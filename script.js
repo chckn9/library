@@ -42,7 +42,7 @@ function displayLibrary(library) {
         newBookAuthor.innerHTML = book.author;
         newBookAuthor.classList.add('author');
         let newBookPages = document.createElement('h3');
-        newBookPages.innerHTML = book.pages;
+        newBookPages.innerHTML = book.pages + ' pages';
         newBookPages.classList.add('pages');
 
         let removeButtonRow = document.createElement('div');
@@ -54,7 +54,6 @@ function displayLibrary(library) {
         let removeButton = document.createElement('div');
         removeButton.innerHTML = 'X';
         removeButton.classList.add('rm-button');
-        // removeButton.setAttribute('id', i);
 
         newBookCard.appendChild(newBookTitle);
         newBookCard.appendChild(newBookAuthor);
