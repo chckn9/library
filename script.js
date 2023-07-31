@@ -64,7 +64,7 @@ function displayLibrary(library) {
 
         // Add event listener to remove button
         removeButton.addEventListener('click', function() {
-            removeBook(document.getElementById(i));
+            removeBook(document.getElementById(i).id);
             displayLibrary(myLibrary);
         })
     }
